@@ -54,6 +54,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         
         if(nodeA!.name == "enemy" && nodeB!.name == "player"){
+            
             player.position = CGPoint(x:96, y:220)
         }
         if(nodeA!.name == "player" && nodeB!.name == "enemy"){
