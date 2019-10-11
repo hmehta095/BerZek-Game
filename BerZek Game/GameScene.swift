@@ -75,6 +75,17 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         if(nodeA!.name == "exit" && nodeB!.name == "player"){
             print("GAME WIN")
+            if let scene = SKScene(fileNamed: "Level02"){
+                scene.scaleMode = .aspectFill
+                
+//                nice way to flip to next level
+                self.view?.presentScene(scene,transition: SKTransition.flipVertical(withDuration: 2.5))
+                
+               // normal flip of next level
+//                self.view?.presentScene(scene)
+            }
+            
+            
         }
         if(nodeA!.name == "player" && nodeB!.name == "exit"){
             print("GAME WIN")
