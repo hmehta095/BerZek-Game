@@ -39,8 +39,20 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
     }
     
+    
+    
     override func update(_ currentTime: TimeInterval) {
         
+    }
+    
+    
+    func restartPlayer() {
+        // hide player from screen
+        self.player.removeFromParent()
+        // restart player in starting position
+        player.position = CGPoint(x:96, y:220)
+        // show player again
+        addChild(player)
     }
     
     func didBegin(_ contact: SKPhysicsContact) {
@@ -55,13 +67,16 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         if(nodeA!.name == "enemy" && nodeB!.name == "player"){
             
-            player.position = CGPoint(x:96, y:220)
+            restartPlayer();
         }
         if(nodeA!.name == "player" && nodeB!.name == "enemy"){
-            player.position = CGPoint(x:96, y:220)
+            restartPlayer();
         }
         
         if(nodeA!.name == "exit" && nodeB!.name == "player"){
+            print("GAME WIN")
+        }
+        if(nodeA!.name == "player" && nodeB!.name == "exit"){
             print("GAME WIN")
         }
         

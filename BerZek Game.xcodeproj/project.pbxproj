@@ -15,6 +15,8 @@
 		BAB116C0234F8C8700E4BAEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB116BE234F8C8700E4BAEB /* Main.storyboard */; };
 		BAB116C2234F8C8C00E4BAEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAB116C1234F8C8C00E4BAEB /* Assets.xcassets */; };
 		BAB116C5234F8C8C00E4BAEB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAB116C3234F8C8C00E4BAEB /* LaunchScreen.storyboard */; };
+		BAEA34522350C46A00A688E5 /* Level02.sks in Resources */ = {isa = PBXBuildFile; fileRef = BAEA34512350C46A00A688E5 /* Level02.sks */; };
+		BAEA34562350C56200A688E5 /* Level02.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAEA34552350C56200A688E5 /* Level02.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		BAB116C1234F8C8C00E4BAEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BAB116C4234F8C8C00E4BAEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BAB116C6234F8C8C00E4BAEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAEA34512350C46A00A688E5 /* Level02.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Level02.sks; sourceTree = "<group>"; };
+		BAEA34552350C56200A688E5 /* Level02.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level02.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				BAB116B4234F8C8700E4BAEB /* AppDelegate.swift */,
 				BAB116B6234F8C8700E4BAEB /* GameScene.sks */,
 				BAB116B8234F8C8700E4BAEB /* Actions.sks */,
+				BAEA34512350C46A00A688E5 /* Level02.sks */,
+				BAEA34552350C56200A688E5 /* Level02.swift */,
 				BAB116BA234F8C8700E4BAEB /* GameScene.swift */,
 				BAB116BC234F8C8700E4BAEB /* GameViewController.swift */,
 				BAB116BE234F8C8700E4BAEB /* Main.storyboard */,
@@ -131,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BAEA34522350C46A00A688E5 /* Level02.sks in Resources */,
 				BAB116C0234F8C8700E4BAEB /* Main.storyboard in Resources */,
 				BAB116B7234F8C8700E4BAEB /* GameScene.sks in Resources */,
 				BAB116C2234F8C8C00E4BAEB /* Assets.xcassets in Resources */,
@@ -148,6 +155,7 @@
 			files = (
 				BAB116BB234F8C8700E4BAEB /* GameScene.swift in Sources */,
 				BAB116BD234F8C8700E4BAEB /* GameViewController.swift in Sources */,
+				BAEA34562350C56200A688E5 /* Level02.swift in Sources */,
 				BAB116B5234F8C8700E4BAEB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
